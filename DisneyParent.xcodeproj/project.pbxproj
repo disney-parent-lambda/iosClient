@@ -12,6 +12,8 @@
 		75373B6222EF94CB00113E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6022EF94CB00113E81 /* Main.storyboard */; };
 		75373B6422EF94D000113E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6322EF94D000113E81 /* Assets.xcassets */; };
 		75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6522EF94D000113E81 /* LaunchScreen.storyboard */; };
+		F6B9192F22EFD1D1006B5916 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9192E22EFD1D1006B5916 /* User.swift */; };
+		F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193022EFD29F006B5916 /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		75373B6322EF94D000113E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75373B6622EF94D000113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75373B6822EF94D000113E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B9192E22EFD1D1006B5916 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F6B9193022EFD29F006B5916 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 		75373B5B22EF94CB00113E81 /* DisneyParent */ = {
 			isa = PBXGroup;
 			children = (
+				F6524D9122EFCF5A003F5D1B /* Models */,
+				F6B9192C22EFCFC1006B5916 /* Views */,
+				F6B9192D22EFCFC8006B5916 /* Controllers */,
 				75373B5C22EF94CB00113E81 /* AppDelegate.swift */,
 				75373B5E22EF94CB00113E81 /* ViewController.swift */,
 				75373B6022EF94CB00113E81 /* Main.storyboard */,
@@ -62,6 +69,29 @@
 				75373B6822EF94D000113E81 /* Info.plist */,
 			);
 			path = DisneyParent;
+			sourceTree = "<group>";
+		};
+		F6524D9122EFCF5A003F5D1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6B9192E22EFD1D1006B5916 /* User.swift */,
+				F6B9193022EFD29F006B5916 /* Ticket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6B9192C22EFCFC1006B5916 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6B9192D22EFCFC8006B5916 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			files = (
 				75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */,
 				75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */,
+				F6B9192F22EFD1D1006B5916 /* User.swift in Sources */,
+				F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
