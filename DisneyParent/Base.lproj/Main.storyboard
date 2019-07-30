@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Create User View Controller-->
         <scene sceneID="J3A-8V-cFA">
             <objects>
-                <viewController id="gLJ-t7-Mhk" sceneMemberID="viewController">
+                <viewController id="gLJ-t7-Mhk" customClass="CreateUserViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gu7-oS-ebO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-259" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,42 +73,74 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disney Parent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJp-sa-huG">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUb-Dj-z2P">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mfL-Ev-tbb">
                                         <rect key="frame" x="0.0" y="106" width="374" height="34"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="please enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKJ-f5-DQJ">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-BG-QXn">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUb-Dj-z2P">
+                                                <rect key="frame" x="84.5" y="0.0" width="289.5" height="34"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymM-Tm-O1A">
                                         <rect key="frame" x="0.0" y="210" width="374" height="34"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INg-xn-2b4">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKJ-f5-DQJ">
+                                                <rect key="frame" x="84.5" y="0.0" width="289.5" height="34"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heC-1K-G8U">
                                         <rect key="frame" x="0.0" y="314" width="374" height="36"/>
+                                        <color key="backgroundColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="log in"/>
+                                        <state key="normal" title="log in">
+                                            <color key="titleColor" red="0.2242196202" green="0.91551524399999995" blue="0.93761354679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="YVq-PZ-RqZ" kind="presentation" id="WEM-rI-Zqm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgU-es-gSr">
                                         <rect key="frame" x="0.0" y="420" width="374" height="36"/>
+                                        <color key="backgroundColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="create account"/>
+                                        <state key="normal" title="create account">
+                                            <color key="titleColor" red="0.2242196202" green="0.91551524399999995" blue="0.93761354679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="gLJ-t7-Mhk" kind="presentation" id="jGL-pB-txh"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="MKJ-f5-DQJ" firstAttribute="leading" secondItem="mUb-Dj-z2P" secondAttribute="leading" id="Naf-DC-6n5"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94473153350000005" green="0.95707708599999997" blue="0.87760388850000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gi8-fZ-6BW" secondAttribute="trailing" constant="20" id="2hu-9f-V5A"/>
                             <constraint firstItem="gi8-fZ-6BW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K59-Y7-tUK"/>
@@ -120,26 +152,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Attraction-->
-        <scene sceneID="y6L-rd-8ue">
+        <!--Attractions-->
+        <scene sceneID="Krn-au-ElH">
             <objects>
-                <viewController id="0yd-I1-pLh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pFy-mP-lfw">
+                <tableViewController id="OBs-QC-SdC" customClass="AttractionsTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FxS-X5-9zP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HVQ-43-fBy"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Attraction" id="DLo-Eh-BLa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hF9-e0-tqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SEV-wY-j3T">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SEV-wY-j3T" id="1kg-Ce-Q5i">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OBs-QC-SdC" id="d0n-xT-6ZJ"/>
+                            <outlet property="delegate" destination="OBs-QC-SdC" id="Ezo-3I-qyp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Attractions" id="N8t-YF-EY7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqf-az-bUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2290" y="1642"/>
+            <point key="canvasLocation" x="2317" y="1642"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Mfm-Mm-Iku">
             <objects>
-                <viewController id="oXc-Og-OWI" sceneMemberID="viewController">
+                <viewController id="oXc-Og-OWI" customClass="ProfileViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCU-Xm-uzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +275,7 @@
         <!--Open ticket-->
         <scene sceneID="xlh-dP-qh4">
             <objects>
-                <tableViewController id="7oX-iz-svm" sceneMemberID="viewController">
+                <tableViewController id="7oX-iz-svm" customClass="OpenTicketTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SWj-2l-ghu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +289,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aPK-Qa-srp" kind="show" id="CCC-dK-GSA"/>
+                                    <segue destination="aPK-Qa-srp" kind="show" identifier="OpenTicketDetailShowSegue" id="CCC-dK-GSA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -262,7 +307,7 @@
         <!--My ticket-->
         <scene sceneID="NKh-d9-hVE">
             <objects>
-                <tableViewController id="AN8-jI-7ps" sceneMemberID="viewController">
+                <tableViewController id="AN8-jI-7ps" customClass="MyTicketTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0qp-AW-StD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +321,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aPK-Qa-srp" kind="show" id="REX-ux-1sL"/>
+                                    <segue destination="aPK-Qa-srp" kind="show" identifier="MyTicketDetailShowSegue" id="REX-ux-1sL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -288,7 +333,7 @@
                     <navigationItem key="navigationItem" title="My ticket" id="Bci-jJ-6LQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KgO-TX-WXo">
                             <connections>
-                                <segue destination="aPK-Qa-srp" kind="show" id="Fw3-34-qcC"/>
+                                <segue destination="aPK-Qa-srp" kind="show" identifier="MyTicketAddShowSegue" id="Fw3-34-qcC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -300,7 +345,7 @@
         <!--Title-->
         <scene sceneID="1sC-Er-rog">
             <objects>
-                <viewController id="aPK-Qa-srp" sceneMemberID="viewController">
+                <viewController id="aPK-Qa-srp" customClass="TicketDetailsViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5I9-Ta-YUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,6 +393,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KIX-EX-q79"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="locationTextfield" destination="kkH-ob-V5C" id="g4S-At-fSm"/>
+                        <outlet property="nameTextfield" destination="Kr6-FV-0v5" id="lDq-yG-YWD"/>
+                        <outlet property="numberOfChildrenTextfield" destination="RPS-8C-GfX" id="E4i-hn-s5E"/>
+                        <outlet property="saveButton" destination="KIX-EX-q79" id="SMg-6z-Djo"/>
+                        <outlet property="timeTextfield" destination="tnQ-cA-voD" id="uQL-NP-64n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dib-Oe-5uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,7 +455,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0yd-I1-pLh" kind="relationship" relationship="rootViewController" id="aUE-OO-wdz"/>
+                        <segue destination="OBs-QC-SdC" kind="relationship" relationship="rootViewController" id="sJv-Db-em8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcK-0B-Xvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,6 +470,6 @@
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CCC-dK-GSA"/>
+        <segue reference="Fw3-34-qcC"/>
     </inferredMetricsTieBreakers>
 </document>

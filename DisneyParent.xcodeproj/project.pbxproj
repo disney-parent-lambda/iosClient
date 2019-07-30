@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B5C22EF94CB00113E81 /* AppDelegate.swift */; };
-		75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B5E22EF94CB00113E81 /* ViewController.swift */; };
 		75373B6222EF94CB00113E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6022EF94CB00113E81 /* Main.storyboard */; };
 		75373B6422EF94D000113E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6322EF94D000113E81 /* Assets.xcassets */; };
 		75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6522EF94D000113E81 /* LaunchScreen.storyboard */; };
+		75373B6F22F0DA0200113E81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B6E22F0DA0200113E81 /* LoginViewController.swift */; };
+		75373B7122F0DA1400113E81 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7022F0DA1400113E81 /* CreateUserViewController.swift */; };
+		75373B7322F0DA6600113E81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7222F0DA6600113E81 /* ProfileViewController.swift */; };
+		75373B7522F0DA7600113E81 /* OpenTicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7422F0DA7600113E81 /* OpenTicketTableViewController.swift */; };
+		75373B7722F0DBFE00113E81 /* MyTicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7622F0DBFE00113E81 /* MyTicketTableViewController.swift */; };
+		75373B7922F0DC1200113E81 /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7822F0DC1200113E81 /* AttractionsTableViewController.swift */; };
+		75373B7B22F0DCD800113E81 /* TicketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B7A22F0DCD800113E81 /* TicketDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75373B5922EF94CB00113E81 /* DisneyParent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyParent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75373B5C22EF94CB00113E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75373B5E22EF94CB00113E81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75373B6122EF94CB00113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75373B6322EF94D000113E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75373B6622EF94D000113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75373B6822EF94D000113E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75373B6E22F0DA0200113E81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75373B7022F0DA1400113E81 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		75373B7222F0DA6600113E81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		75373B7422F0DA7600113E81 /* OpenTicketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTicketTableViewController.swift; sourceTree = "<group>"; };
+		75373B7622F0DBFE00113E81 /* MyTicketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketTableViewController.swift; sourceTree = "<group>"; };
+		75373B7822F0DC1200113E81 /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
+		75373B7A22F0DCD800113E81 /* TicketDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				75373B5C22EF94CB00113E81 /* AppDelegate.swift */,
-				75373B5E22EF94CB00113E81 /* ViewController.swift */,
 				75373B6022EF94CB00113E81 /* Main.storyboard */,
+				75373B6E22F0DA0200113E81 /* LoginViewController.swift */,
+				75373B7022F0DA1400113E81 /* CreateUserViewController.swift */,
+				75373B7222F0DA6600113E81 /* ProfileViewController.swift */,
+				75373B7A22F0DCD800113E81 /* TicketDetailsViewController.swift */,
+				75373B7422F0DA7600113E81 /* OpenTicketTableViewController.swift */,
+				75373B7622F0DBFE00113E81 /* MyTicketTableViewController.swift */,
+				75373B7822F0DC1200113E81 /* AttractionsTableViewController.swift */,
 				75373B6322EF94D000113E81 /* Assets.xcassets */,
 				75373B6522EF94D000113E81 /* LaunchScreen.storyboard */,
 				75373B6822EF94D000113E81 /* Info.plist */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */,
+				75373B7522F0DA7600113E81 /* OpenTicketTableViewController.swift in Sources */,
+				75373B6F22F0DA0200113E81 /* LoginViewController.swift in Sources */,
 				75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */,
+				75373B7322F0DA6600113E81 /* ProfileViewController.swift in Sources */,
+				75373B7122F0DA1400113E81 /* CreateUserViewController.swift in Sources */,
+				75373B7922F0DC1200113E81 /* AttractionsTableViewController.swift in Sources */,
+				75373B7722F0DBFE00113E81 /* MyTicketTableViewController.swift in Sources */,
+				75373B7B22F0DCD800113E81 /* TicketDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
