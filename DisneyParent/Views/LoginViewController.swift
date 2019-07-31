@@ -9,7 +9,14 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    //Properties
+    var loginController: LoginController!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +33,32 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        
+        if let username = self.usernameTextField.text, !username.isEmpty,
+            let password = self.passwordTextField.text, !password.isEmpty {
+            let user = User(username: username, password: password)
+            
 
+                loginController.signUp(with: user) { (error) in
+                    if let error = error {
+                        NSLog("Error occurred during sign up: \(error)")
+                    } else {
+                        DispatchQueue.main.async {
+                            let alertController = UIAlertController(title: "Sign Up Successful", message: "Now please log in.", preferredStyle: .alert)
+                            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                            alertController.addAction(alertAction)
+                            self.present(alertController, animated: true, completion: { })
+                        }
+                    }
+                }
+        }
+    }
+    
+    
+    
+    @IBAction func createAccountButtonTapped(_ sender: Any) {
+    }
+    
 }

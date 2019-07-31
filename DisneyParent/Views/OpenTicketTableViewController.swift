@@ -9,33 +9,65 @@
 import UIKit
 
 class OpenTicketTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+    //Properties
+    let ticketController = TicketController()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //prompt Login if there is no token
+        //        if self.ticketController.token == nil {
+        //            performSegue(withIdentifier: "LoginViewModalSegue", sender: self)
+        //        } else {
+        ticketController.fetchAllTickets(completion: { (_ ) in
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
     }
-
+    
+    
+    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
+    
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//
+//        return 0
+//    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return ticketController.allTickets.count
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath)
+        
+        let ticket = ticketController.allTickets[indexPath.row]
+        
+        cell.textLabel?.text = ticket.title
+        
+        return cell
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         guard let detailVC = segue.destination as? TicketDetailsViewController else {return}
+        
         if segue.identifier == "OpenTicketDetailShowSegue" {
             detailVC.fromMyTicket = false
-            print("openticket")
+            
+            guard let indexPath = self.tableView.indexPathForSelectedRow else {return}
+            
+            let ticket = ticketController.allTickets[indexPath.row]
+            detailVC.ticket = ticket
+            
+            detailVC.ticketController = ticketController
+            //print("openticket")
         }
     }
 }
