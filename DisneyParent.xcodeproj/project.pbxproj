@@ -14,6 +14,9 @@
 		75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6522EF94D000113E81 /* LaunchScreen.storyboard */; };
 		F6B9192F22EFD1D1006B5916 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9192E22EFD1D1006B5916 /* User.swift */; };
 		F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193022EFD29F006B5916 /* Ticket.swift */; };
+		F6B9193B22F15F09006B5916 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193A22F15F09006B5916 /* Token.swift */; };
+		F6B9193E22F15F2A006B5916 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193C22F15F2A006B5916 /* LoginController.swift */; };
+		F6B9193F22F15F2A006B5916 /* TicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193D22F15F2A006B5916 /* TicketController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		75373B6822EF94D000113E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B9192E22EFD1D1006B5916 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6B9193022EFD29F006B5916 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		F6B9193A22F15F09006B5916 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		F6B9193C22F15F2A006B5916 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F6B9193D22F15F2A006B5916 /* TicketController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			children = (
 				F6B9192E22EFD1D1006B5916 /* User.swift */,
 				F6B9193022EFD29F006B5916 /* Ticket.swift */,
+				F6B9193A22F15F09006B5916 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +97,8 @@
 		F6B9192D22EFCFC8006B5916 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F6B9193C22F15F2A006B5916 /* LoginController.swift */,
+				F6B9193D22F15F2A006B5916 /* TicketController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */,
+				F6B9193E22F15F2A006B5916 /* LoginController.swift in Sources */,
+				F6B9193B22F15F09006B5916 /* Token.swift in Sources */,
 				75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */,
 				F6B9192F22EFD1D1006B5916 /* User.swift in Sources */,
+				F6B9193F22F15F2A006B5916 /* TicketController.swift in Sources */,
 				F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

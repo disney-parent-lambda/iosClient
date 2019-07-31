@@ -5,17 +5,16 @@
 //  Created by Nathan Hedgeman on 7/29/19.
 //  Copyright © 2019 bradleyyin. All rights reserved.
 //
-
 import Foundation
 
-class Ticket {
+class Ticket: Codable {
     
-    let id: UUID
-    let name: String
-    let location: String
-    let time: Date
-    let numberOfKids: Int
-    let message: String
+    var id: UUID
+    var name: String
+    var location: String
+    var time: Date
+    var numberOfKids: Int
+    var message: String
     
     init(id: UUID = UUID(), name: String, location: String, time: Date, numberOfKids: Int, message: String ) {
         

@@ -8,17 +8,15 @@
 
 import Foundation
 
-class User {
+class User: Codable {
     
-    let username: String
-    let password: String
-    let auth:     String
+    var username: String
+    var password: String
     
-    init(username: String, password: String, auth: String) {
+    init(username: String, password: String, auth: Token) {
         
         self.username = username
         self.password = password
-        self.auth     = auth
         
     }
     
