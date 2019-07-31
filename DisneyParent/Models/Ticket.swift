@@ -16,6 +16,7 @@ class Ticket: Codable {
     var time: Date
     var numberOfKids: Int
     var message: String
+    var isOpen = true
     
     init(id: UUID = UUID(), name: String, location: String, time: Date, numberOfKids: Int, message: String ) {
         
