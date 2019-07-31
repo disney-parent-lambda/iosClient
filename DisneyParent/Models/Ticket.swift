@@ -5,6 +5,7 @@
 //  Created by Nathan Hedgeman on 7/29/19.
 //  Copyright © 2019 bradleyyin. All rights reserved.
 //
+
 import Foundation
 
 class Ticket: Codable {

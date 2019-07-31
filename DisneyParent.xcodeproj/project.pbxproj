@@ -9,29 +9,43 @@
 /* Begin PBXBuildFile section */
 		75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B5C22EF94CB00113E81 /* AppDelegate.swift */; };
 		75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B5E22EF94CB00113E81 /* ViewController.swift */; };
-		75373B6222EF94CB00113E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6022EF94CB00113E81 /* Main.storyboard */; };
 		75373B6422EF94D000113E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6322EF94D000113E81 /* Assets.xcassets */; };
 		75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6522EF94D000113E81 /* LaunchScreen.storyboard */; };
 		F6B9192F22EFD1D1006B5916 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9192E22EFD1D1006B5916 /* User.swift */; };
 		F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193022EFD29F006B5916 /* Ticket.swift */; };
-		F6B9193B22F15F09006B5916 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193A22F15F09006B5916 /* Token.swift */; };
-		F6B9193E22F15F2A006B5916 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193C22F15F2A006B5916 /* LoginController.swift */; };
-		F6B9193F22F15F2A006B5916 /* TicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193D22F15F2A006B5916 /* TicketController.swift */; };
+		F6B9193322EFDC8C006B5916 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193222EFDC8C006B5916 /* Token.swift */; };
+		F6B9193522EFDF1E006B5916 /* TicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193422EFDF1E006B5916 /* TicketController.swift */; };
+		F6B9193922EFE005006B5916 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193822EFE005006B5916 /* LoginController.swift */; };
+		F6B9195122F1739A006B5916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B9195022F1739A006B5916 /* Main.storyboard */; };
+		F6B9195922F173D0006B5916 /* TicketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195222F173D0006B5916 /* TicketDetailsViewController.swift */; };
+		F6B9195A22F173D0006B5916 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195322F173D0006B5916 /* LoginViewController.swift */; };
+		F6B9195B22F173D0006B5916 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195422F173D0006B5916 /* CreateUserViewController.swift */; };
+		F6B9195C22F173D0006B5916 /* OpenTicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195522F173D0006B5916 /* OpenTicketTableViewController.swift */; };
+		F6B9195D22F173D0006B5916 /* AttractionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195622F173D0006B5916 /* AttractionsTableViewController.swift */; };
+		F6B9195E22F173D0006B5916 /* MyTicketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195722F173D0006B5916 /* MyTicketTableViewController.swift */; };
+		F6B9195F22F173D0006B5916 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195822F173D0006B5916 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		75373B5922EF94CB00113E81 /* DisneyParent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyParent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75373B5C22EF94CB00113E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75373B5E22EF94CB00113E81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75373B6122EF94CB00113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75373B6322EF94D000113E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75373B6622EF94D000113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75373B6822EF94D000113E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B9192E22EFD1D1006B5916 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6B9193022EFD29F006B5916 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
-		F6B9193A22F15F09006B5916 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		F6B9193C22F15F2A006B5916 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		F6B9193D22F15F2A006B5916 /* TicketController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketController.swift; sourceTree = "<group>"; };
+		F6B9193222EFDC8C006B5916 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		F6B9193422EFDF1E006B5916 /* TicketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketController.swift; sourceTree = "<group>"; };
+		F6B9193822EFE005006B5916 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F6B9195022F1739A006B5916 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F6B9195222F173D0006B5916 /* TicketDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailsViewController.swift; sourceTree = "<group>"; };
+		F6B9195322F173D0006B5916 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F6B9195422F173D0006B5916 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		F6B9195522F173D0006B5916 /* OpenTicketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTicketTableViewController.swift; sourceTree = "<group>"; };
+		F6B9195622F173D0006B5916 /* AttractionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsTableViewController.swift; sourceTree = "<group>"; };
+		F6B9195722F173D0006B5916 /* MyTicketTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketTableViewController.swift; sourceTree = "<group>"; };
+		F6B9195822F173D0006B5916 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +83,7 @@
 				F6B9192D22EFCFC8006B5916 /* Controllers */,
 				75373B5C22EF94CB00113E81 /* AppDelegate.swift */,
 				75373B5E22EF94CB00113E81 /* ViewController.swift */,
-				75373B6022EF94CB00113E81 /* Main.storyboard */,
+				F6B9195022F1739A006B5916 /* Main.storyboard */,
 				75373B6322EF94D000113E81 /* Assets.xcassets */,
 				75373B6522EF94D000113E81 /* LaunchScreen.storyboard */,
 				75373B6822EF94D000113E81 /* Info.plist */,
@@ -80,9 +94,9 @@
 		F6524D9122EFCF5A003F5D1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6B9193222EFDC8C006B5916 /* Token.swift */,
 				F6B9192E22EFD1D1006B5916 /* User.swift */,
 				F6B9193022EFD29F006B5916 /* Ticket.swift */,
-				F6B9193A22F15F09006B5916 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 		F6B9192C22EFCFC1006B5916 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6B9195622F173D0006B5916 /* AttractionsTableViewController.swift */,
+				F6B9195422F173D0006B5916 /* CreateUserViewController.swift */,
+				F6B9195322F173D0006B5916 /* LoginViewController.swift */,
+				F6B9195722F173D0006B5916 /* MyTicketTableViewController.swift */,
+				F6B9195522F173D0006B5916 /* OpenTicketTableViewController.swift */,
+				F6B9195822F173D0006B5916 /* ProfileViewController.swift */,
+				F6B9195222F173D0006B5916 /* TicketDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,8 +118,8 @@
 		F6B9192D22EFCFC8006B5916 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6B9193C22F15F2A006B5916 /* LoginController.swift */,
-				F6B9193D22F15F2A006B5916 /* TicketController.swift */,
+				F6B9193422EFDF1E006B5916 /* TicketController.swift */,
+				F6B9193822EFE005006B5916 /* LoginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,7 +184,7 @@
 			files = (
 				75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */,
 				75373B6422EF94D000113E81 /* Assets.xcassets in Resources */,
-				75373B6222EF94CB00113E81 /* Main.storyboard in Resources */,
+				F6B9195122F1739A006B5916 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,27 +195,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B9195A22F173D0006B5916 /* LoginViewController.swift in Sources */,
+				F6B9195B22F173D0006B5916 /* CreateUserViewController.swift in Sources */,
+				F6B9195C22F173D0006B5916 /* OpenTicketTableViewController.swift in Sources */,
 				75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */,
-				F6B9193E22F15F2A006B5916 /* LoginController.swift in Sources */,
-				F6B9193B22F15F09006B5916 /* Token.swift in Sources */,
+				F6B9195F22F173D0006B5916 /* ProfileViewController.swift in Sources */,
+				F6B9195E22F173D0006B5916 /* MyTicketTableViewController.swift in Sources */,
+				F6B9193322EFDC8C006B5916 /* Token.swift in Sources */,
 				75373B5D22EF94CB00113E81 /* AppDelegate.swift in Sources */,
 				F6B9192F22EFD1D1006B5916 /* User.swift in Sources */,
-				F6B9193F22F15F2A006B5916 /* TicketController.swift in Sources */,
 				F6B9193122EFD29F006B5916 /* Ticket.swift in Sources */,
+				F6B9193522EFDF1E006B5916 /* TicketController.swift in Sources */,
+				F6B9193922EFE005006B5916 /* LoginController.swift in Sources */,
+				F6B9195D22F173D0006B5916 /* AttractionsTableViewController.swift in Sources */,
+				F6B9195922F173D0006B5916 /* TicketDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75373B6022EF94CB00113E81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75373B6122EF94CB00113E81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75373B6522EF94D000113E81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8367QTYVY6;
+				DEVELOPMENT_TEAM = 8492LT54LT;
 				INFOPLIST_FILE = DisneyParent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8367QTYVY6;
+				DEVELOPMENT_TEAM = 8492LT54LT;
 				INFOPLIST_FILE = DisneyParent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
