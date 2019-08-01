@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    
+    //this page might get removed
 
     override func viewDidLoad() {
         super.viewDidLoad()

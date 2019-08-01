@@ -43,6 +43,9 @@
                                         <rect key="frame" x="0.0" y="368" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="ceateTapped:" destination="gLJ-t7-Mhk" eventType="touchUpInside" id="Usg-qE-4Tq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -126,6 +129,7 @@
                                             <color key="titleColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6e-EZ-KWl"/>
                                             <segue destination="YVq-PZ-RqZ" kind="presentation" id="WEM-rI-Zqm"/>
                                         </connections>
                                     </button>
@@ -154,6 +158,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="MKJ-f5-DQJ" id="rJy-Ds-aVD"/>
+                        <outlet property="usernameTextfield" destination="mUb-Dj-z2P" id="kP4-eT-jY9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
