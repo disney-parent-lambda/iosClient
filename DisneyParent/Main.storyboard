@@ -288,9 +288,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.2242196202" green="0.91551524399999995" blue="0.93761354679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="PkP-tN-yEI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="7oX-iz-svm" id="YuU-Ax-m6Z"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qH8-29-8GN">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qH8-29-8GN" id="kUI-T1-WhE">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -307,8 +315,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Open ticket" id="8CC-Fv-kUO"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="KdF-fQ-AaD" id="NaF-rz-Bw0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYd-MJ-XbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="KdF-fQ-AaD">
+                    <connections>
+                        <outlet property="delegate" destination="7oX-iz-svm" id="ziA-eb-4jT"/>
+                        <outlet property="searchBar" destination="PkP-tN-yEI" id="rNR-gh-n1w"/>
+                        <outlet property="searchContentsController" destination="7oX-iz-svm" id="A8Y-Bq-TU0"/>
+                        <outlet property="searchResultsDataSource" destination="7oX-iz-svm" id="7wo-O2-jyj"/>
+                        <outlet property="searchResultsDelegate" destination="7oX-iz-svm" id="QpU-pn-aGw"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="532" y="1642"/>
         </scene>
@@ -479,6 +499,6 @@
         <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fw3-34-qcC"/>
+        <segue reference="CCC-dK-GSA"/>
     </inferredMetricsTieBreakers>
 </document>

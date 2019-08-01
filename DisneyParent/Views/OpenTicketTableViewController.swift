@@ -10,6 +10,8 @@ import UIKit
 
 class OpenTicketTableViewController: UITableViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,5 +39,14 @@ class OpenTicketTableViewController: UITableViewController {
     func loadTicket(){
         //api calls
         
+    }
+}
+extension OpenTicketTableViewController: UISearchBarDelegate{
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        //filter search result here
+        print("search")
     }
 }
