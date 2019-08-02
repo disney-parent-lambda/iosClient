@@ -270,7 +270,6 @@
                         <segue destination="mko-DN-Ndx" kind="relationship" relationship="viewControllers" id="YdB-Ij-Dcx"/>
                         <segue destination="wWY-at-g6y" kind="relationship" relationship="viewControllers" id="gwi-G6-fOf"/>
                         <segue destination="Du8-NA-nz1" kind="relationship" relationship="viewControllers" id="EA3-cF-5Dw"/>
-                        <segue destination="S1R-Il-rj4" kind="relationship" relationship="viewControllers" id="M5S-Jp-5un"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpb-5F-UBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -502,25 +501,6 @@
             </objects>
             <point key="canvasLocation" x="1478" y="869"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="Kjx-ax-1vV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S1R-Il-rj4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Uwb-iX-zCu"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dXG-68-Gli">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="oXc-Og-OWI" kind="relationship" relationship="rootViewController" id="CFB-f8-PDL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VLb-zO-FJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3174" y="860"/>
-        </scene>
         <!--Attractions-->
         <scene sceneID="Xpx-Dg-s82">
             <objects>
@@ -545,7 +525,6 @@
         <image name="attraction" width="30" height="30"/>
         <image name="myTicket" width="30" height="30"/>
         <image name="openTicket" width="30" height="30"/>
-        <image name="profile" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CCC-dK-GSA"/>
