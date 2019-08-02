@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
                 if let error = error {
                     NSLog("Error occurred during sign up: \(error)")
                 } else {
-                    performSegue(withIdentifier: "loginShowSegue", sender: self)
+                    self.performSegue(withIdentifier: "loginShowSegue", sender: self)
                 }
             }
         }
