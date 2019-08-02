@@ -14,11 +14,10 @@ class User: Codable {
     var username: String
     var password: String
     
-<<<<<<< HEAD
-    init(username: String, password: String /*auth: Token*/) {
-=======
+
+    
+
     init(username: String, password: String) {
->>>>>>> codeDevelopment
         
         self.username = username
         self.password = password

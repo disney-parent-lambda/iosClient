@@ -13,17 +13,13 @@ class Ticket: Codable {
     var userid: Int?
     var title: String
     var location: String
-<<<<<<< HEAD
-    var time: Date
-    var numberOfKids: Int
-    var message: String
-    var isOpen = true
-=======
+    var message: String?
+    var isOpen: Bool = true
     var time: String
     var numberOfKids: String
     var accepted: Bool = false
     var username: String?
->>>>>>> codeDevelopment
+
     
     
     init(title: String, location: String, time: String, numberOfKids: String ) {

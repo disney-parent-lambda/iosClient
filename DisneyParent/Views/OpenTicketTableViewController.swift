@@ -9,15 +9,10 @@
 import UIKit
 
 class OpenTicketTableViewController: UITableViewController {
-<<<<<<< HEAD
+
 
     @IBOutlet weak var searchBar: UISearchBar!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-=======
     
     //Properties
     let ticketController = TicketController()
@@ -28,7 +23,7 @@ class OpenTicketTableViewController: UITableViewController {
         ticketController.fetchAllTickets { (_) in
             print(self.ticketController.allTickets)
         }
->>>>>>> codeDevelopment
+
     }
     
     

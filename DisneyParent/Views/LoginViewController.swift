@@ -10,12 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-<<<<<<< HEAD
+
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
 
-=======
+
     //Properties
     var loginController = LoginController()
     
@@ -23,21 +23,20 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
->>>>>>> codeDevelopment
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-<<<<<<< HEAD
 
     @IBAction func loginTapped(_ sender: Any) {
         
     }
-=======
+
     
->>>>>>> codeDevelopment
+
     /*
      // MARK: - Navigation
      
