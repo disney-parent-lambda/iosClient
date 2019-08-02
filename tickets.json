@@ -1,0 +1,38 @@
+[
+        {
+            "userid": 1,
+            "title": "3 Strollers",
+            "location": "Westward Ho",
+            "time": "5:45pm",
+            "numberOfKids": "3",
+            "accepted": true,
+            "username": "larrywinter"
+        },
+        {
+            "userid": 2,
+            "title": "Day Care Service",
+            "location": "Plaza Ice Cream Parlor",
+            "time": "5:45pm",
+            "numberOfKids": "4",
+            "accepted": false,
+            "username": "marysummer"
+        },
+        {
+            "userid": 3,
+            "title": "Day Care Service",
+            "location": "Columbia Harbour House",
+            "time": "5:45pm",
+            "numberOfKids": "2",
+            "accepted": false,
+            "username": "lilyspring"
+        },
+        {
+            "userid": 4,
+            "title": "1 Stroller",
+            "location": "Cinderella's Royal Table",
+            "time": "5:45pm",
+            "numberOfKids": "1",
+            "accepted": true,
+            "username": "autumnfall"
+        }
+]

@@ -10,28 +10,62 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+<<<<<<< HEAD
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
 
+=======
+    //Properties
+    var loginController = LoginController()
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+>>>>>>> codeDevelopment
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+<<<<<<< HEAD
 
     @IBAction func loginTapped(_ sender: Any) {
         
     }
+=======
+    
+>>>>>>> codeDevelopment
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        
+        if let username = self.usernameTextField.text, !username.isEmpty,
+            let password = self.passwordTextField.text, !password.isEmpty {
+            let user = User(username: username, password: password)
+            
+            
+            loginController.signIn(with: user) { (error) in
+                if let error = error {
+                    NSLog("Error occurred during sign up: \(error)")
+                }
+            }
+        }
     }
-    */
-
+    
+    
+    
+    @IBAction func createAccountButtonTapped(_ sender: Any) {
+    }
+    
 }

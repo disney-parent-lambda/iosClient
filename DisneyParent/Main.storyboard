@@ -13,7 +13,7 @@
         <!--Create User View Controller-->
         <scene sceneID="J3A-8V-cFA">
             <objects>
-                <viewController id="gLJ-t7-Mhk" customClass="CreateUserViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gLJ-t7-Mhk" customClass="CreateUserViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gu7-oS-ebO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
+<<<<<<< HEAD
                                             <action selector="ceateTapped:" destination="gLJ-t7-Mhk" eventType="touchUpInside" id="Usg-qE-4Tq"/>
+=======
+                                            <action selector="createButtonTapped:" destination="gLJ-t7-Mhk" eventType="touchUpInside" id="4GC-Vf-erZ"/>
+>>>>>>> codeDevelopment
                                         </connections>
                                     </button>
                                 </subviews>
@@ -59,8 +63,14 @@
                         <viewLayoutGuide key="safeArea" id="8K0-5l-eRB"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="passwordTextfield" destination="PLu-PW-bLE" id="cSe-GO-cQO"/>
                         <outlet property="usernameTextfield" destination="F69-eG-Wpt" id="jg4-cK-B3W"/>
+=======
+                        <outlet property="emailTextField" destination="lpJ-RF-XHS" id="Q2K-cp-7ya"/>
+                        <outlet property="passwordTextField" destination="PLu-PW-bLE" id="jds-bY-XMs"/>
+                        <outlet property="usernameTextField" destination="F69-eG-Wpt" id="OmW-St-5Pq"/>
+>>>>>>> codeDevelopment
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bff-AE-z8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -70,7 +80,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +139,11 @@
                                             <color key="titleColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+<<<<<<< HEAD
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6e-EZ-KWl"/>
+=======
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dat-66-0xt"/>
+>>>>>>> codeDevelopment
                                             <segue destination="YVq-PZ-RqZ" kind="presentation" id="WEM-rI-Zqm"/>
                                         </connections>
                                     </button>
@@ -141,6 +155,7 @@
                                             <color key="titleColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="createAccountButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R81-J3-K99"/>
                                             <segue destination="gLJ-t7-Mhk" kind="presentation" id="jGL-pB-txh"/>
                                         </connections>
                                     </button>
@@ -159,8 +174,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="passwordTextfield" destination="MKJ-f5-DQJ" id="rJy-Ds-aVD"/>
                         <outlet property="usernameTextfield" destination="mUb-Dj-z2P" id="kP4-eT-jY9"/>
+=======
+                        <outlet property="passwordTextField" destination="MKJ-f5-DQJ" id="h1u-JU-qKO"/>
+                        <outlet property="usernameTextField" destination="mUb-Dj-z2P" id="Lbx-vc-PpU"/>
+>>>>>>> codeDevelopment
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -169,14 +189,18 @@
         <!--Attractions-->
         <scene sceneID="Krn-au-ElH">
             <objects>
-                <tableViewController id="OBs-QC-SdC" customClass="AttractionsTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="OBs-QC-SdC" customClass="AttractionsTableViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FxS-X5-9zP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.2242196202" green="0.91551524399999995" blue="0.93761354679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
+<<<<<<< HEAD
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="3Oe-TZ-IwL" style="IBUITableViewCellStyleDefault" id="SEV-wY-j3T">
+=======
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AttractionCell" id="SEV-wY-j3T">
+>>>>>>> codeDevelopment
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SEV-wY-j3T" id="1kg-Ce-Q5i">
@@ -208,7 +232,7 @@
         <!--Profile-->
         <scene sceneID="Mfm-Mm-Iku">
             <objects>
-                <viewController id="oXc-Og-OWI" customClass="ProfileViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oXc-Og-OWI" customClass="ProfileViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCU-Xm-uzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +323,7 @@
         <!--Open ticket-->
         <scene sceneID="xlh-dP-qh4">
             <objects>
-                <tableViewController id="7oX-iz-svm" customClass="OpenTicketTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7oX-iz-svm" customClass="OpenTicketTableViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SWj-2l-ghu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,8 +338,13 @@
                             </connections>
                         </searchBar>
                         <prototypes>
+<<<<<<< HEAD
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="UXk-vg-aZv" detailTextLabel="bP6-Lg-jla" style="IBUITableViewCellStyleValue1" id="qH8-29-8GN">
                                 <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+=======
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" id="qH8-29-8GN">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+>>>>>>> codeDevelopment
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qH8-29-8GN" id="kUI-T1-WhE">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -368,14 +397,18 @@
         <!--My ticket-->
         <scene sceneID="NKh-d9-hVE">
             <objects>
-                <tableViewController id="AN8-jI-7ps" customClass="MyTicketTableViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AN8-jI-7ps" customClass="MyTicketTableViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0qp-AW-StD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.2242196202" green="0.91551524399999995" blue="0.93761354679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
+<<<<<<< HEAD
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="AjB-V9-wFd" detailTextLabel="SUa-Hy-DLT" style="IBUITableViewCellStyleValue1" id="jAS-qB-QUx">
+=======
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTicketCell" id="jAS-qB-QUx">
+>>>>>>> codeDevelopment
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jAS-qB-QUx" id="SC5-MA-6fP">
@@ -411,6 +444,7 @@
                     <navigationItem key="navigationItem" title="My ticket" id="Bci-jJ-6LQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KgO-TX-WXo">
                             <connections>
+                                <action selector="addTicket:" destination="AN8-jI-7ps" id="HO7-u4-wKc"/>
                                 <segue destination="aPK-Qa-srp" kind="show" identifier="MyTicketAddShowSegue" id="Fw3-34-qcC"/>
                             </connections>
                         </barButtonItem>
@@ -423,7 +457,7 @@
         <!--Title-->
         <scene sceneID="1sC-Er-rog">
             <objects>
-                <viewController id="aPK-Qa-srp" customClass="TicketDetailsViewController" customModule="DisneyParent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aPK-Qa-srp" customClass="TicketDetailsViewController" customModule="PracticeDisneyParent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5I9-Ta-YUa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,7 +502,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="455-te-0fz">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="KIX-EX-q79"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="KIX-EX-q79">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="aPK-Qa-srp" id="qAo-Ol-K8v"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

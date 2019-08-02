@@ -10,23 +10,30 @@ import Foundation
 
 class Ticket: Codable {
     
-    var id: UUID
-    var name: String
+    var userid: Int?
+    var title: String
     var location: String
+<<<<<<< HEAD
     var time: Date
     var numberOfKids: Int
     var message: String
     var isOpen = true
+=======
+    var time: String
+    var numberOfKids: String
+    var accepted: Bool = false
+    var username: String?
+>>>>>>> codeDevelopment
     
-    init(id: UUID = UUID(), name: String, location: String, time: Date, numberOfKids: Int, message: String ) {
+    
+    init(title: String, location: String, time: String, numberOfKids: String ) {
         
-        self.id = id
-        self.name = name
+        self.title = title
         self.location = location
         self.time = time
         self.numberOfKids = numberOfKids
         //added a message property to allow users to describe how to find them at the location
-        self.message = message
+        //self.message = message
         
     }
 }

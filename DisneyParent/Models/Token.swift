@@ -7,8 +7,15 @@
 //
 
 import Foundation
-struct Token: Codable {
+public struct Token: Codable {
     
-    var token: String
+    let accessToken: String
+    let tokenType: String
+    let expiresIn: Int
+    let scope: String
     
 }
+
+public var currentToken: Token?
+
+
