@@ -11,6 +11,7 @@
 		75373B5F22EF94CB00113E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75373B5E22EF94CB00113E81 /* ViewController.swift */; };
 		75373B6422EF94D000113E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6322EF94D000113E81 /* Assets.xcassets */; };
 		75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B6522EF94D000113E81 /* LaunchScreen.storyboard */; };
+		75373B8122F4D19000113E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75373B8022F4D19000113E81 /* Main.storyboard */; };
 		F63D010422F3518B001AC9D0 /* tickets.json in Resources */ = {isa = PBXBuildFile; fileRef = F63D010322F3518A001AC9D0 /* tickets.json */; };
 		F63D010622F39DF8001AC9D0 /* restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = F63D010522F39DF7001AC9D0 /* restaurant.json */; };
 		F63D010822F3D1F2001AC9D0 /* myTickets.json in Resources */ = {isa = PBXBuildFile; fileRef = F63D010722F3D1F0001AC9D0 /* myTickets.json */; };
@@ -19,7 +20,6 @@
 		F6B9193322EFDC8C006B5916 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193222EFDC8C006B5916 /* Token.swift */; };
 		F6B9193522EFDF1E006B5916 /* TicketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193422EFDF1E006B5916 /* TicketController.swift */; };
 		F6B9193922EFE005006B5916 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9193822EFE005006B5916 /* LoginController.swift */; };
-		F6B9195122F1739A006B5916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B9195022F1739A006B5916 /* Main.storyboard */; };
 		F6B9195922F173D0006B5916 /* TicketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195222F173D0006B5916 /* TicketDetailsViewController.swift */; };
 		F6B9195A22F173D0006B5916 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195322F173D0006B5916 /* LoginViewController.swift */; };
 		F6B9195B22F173D0006B5916 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B9195422F173D0006B5916 /* CreateUserViewController.swift */; };
@@ -38,6 +38,7 @@
 		75373B6322EF94D000113E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75373B6622EF94D000113E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75373B6822EF94D000113E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75373B8022F4D19000113E81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F63D010322F3518A001AC9D0 /* tickets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickets.json; sourceTree = SOURCE_ROOT; };
 		F63D010522F39DF7001AC9D0 /* restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurant.json; sourceTree = SOURCE_ROOT; };
 		F63D010722F3D1F0001AC9D0 /* myTickets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myTickets.json; sourceTree = SOURCE_ROOT; };
@@ -46,7 +47,6 @@
 		F6B9193222EFDC8C006B5916 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		F6B9193422EFDF1E006B5916 /* TicketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketController.swift; sourceTree = "<group>"; };
 		F6B9193822EFE005006B5916 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		F6B9195022F1739A006B5916 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F6B9195222F173D0006B5916 /* TicketDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailsViewController.swift; sourceTree = "<group>"; };
 		F6B9195322F173D0006B5916 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F6B9195422F173D0006B5916 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				F6B9192D22EFCFC8006B5916 /* Controllers */,
 				75373B5C22EF94CB00113E81 /* AppDelegate.swift */,
 				75373B5E22EF94CB00113E81 /* ViewController.swift */,
-				F6B9195022F1739A006B5916 /* Main.storyboard */,
+				75373B8022F4D19000113E81 /* Main.storyboard */,
 				75373B6322EF94D000113E81 /* Assets.xcassets */,
 				75373B6522EF94D000113E81 /* LaunchScreen.storyboard */,
 				75373B6822EF94D000113E81 /* Info.plist */,
@@ -200,8 +200,8 @@
 				75373B6722EF94D000113E81 /* LaunchScreen.storyboard in Resources */,
 				F63D010622F39DF8001AC9D0 /* restaurant.json in Resources */,
 				75373B6422EF94D000113E81 /* Assets.xcassets in Resources */,
+				75373B8122F4D19000113E81 /* Main.storyboard in Resources */,
 				F63D010822F3D1F2001AC9D0 /* myTickets.json in Resources */,
-				F6B9195122F1739A006B5916 /* Main.storyboard in Resources */,
 				F63D010422F3518B001AC9D0 /* tickets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
