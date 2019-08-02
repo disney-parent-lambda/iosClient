@@ -20,15 +20,20 @@ class CreateUserViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func createTapped(_ sender: Any) {
+        createNewUser()
+    }
     func createNewUser(){
         guard let username = usernameTextfield.text, !username.isEmpty, let password = passwordTextfield.text, !password.isEmpty else { return }
         let newUser = User(username: username, password: password)
         loginController.signUp(with: newUser) { (error) in
             if error != nil{
+                print("error signing up: \(error)")
                 return
             }
             self.dismiss(animated: true, completion: nil)

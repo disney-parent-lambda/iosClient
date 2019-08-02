@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Create"/>
                                         <connections>
-                                            <action selector="ceateTapped:" destination="gLJ-t7-Mhk" eventType="touchUpInside" id="Usg-qE-4Tq"/>
+                                            <action selector="createTapped:" destination="gLJ-t7-Mhk" eventType="touchUpInside" id="LSw-PL-pep"/>
                                         </connections>
                                     </button>
                                 </subviews>
