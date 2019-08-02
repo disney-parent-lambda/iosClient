@@ -26,6 +26,13 @@ class CreateUserViewController: UIViewController {
 
     func createNewUser(){
         guard let username = usernameTextfield.text, !username.isEmpty, let password = passwordTextfield.text, !password.isEmpty else { return }
+        let newUser = User(username: username, password: password)
+        loginController.signUp(with: newUser) { (error) in
+            if error != nil{
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
         
         
     }

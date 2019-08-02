@@ -129,8 +129,7 @@
                                             <color key="titleColor" red="0.048845566809999998" green="0.21629551050000001" blue="0.98481518030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6e-EZ-KWl"/>
-                                            <segue destination="YVq-PZ-RqZ" kind="presentation" id="WEM-rI-Zqm"/>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4g0-tX-V1b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgU-es-gSr">
@@ -159,8 +158,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="passwordTextfield" destination="MKJ-f5-DQJ" id="rJy-Ds-aVD"/>
-                        <outlet property="usernameTextfield" destination="mUb-Dj-z2P" id="kP4-eT-jY9"/>
+                        <outlet property="passwordTextField" destination="MKJ-f5-DQJ" id="9H0-JB-OlH"/>
+                        <outlet property="usernameTextField" destination="mUb-Dj-z2P" id="7BR-IT-Sjc"/>
+                        <segue destination="YVq-PZ-RqZ" kind="show" identifier="loginShowSegue" id="ev6-Dy-meQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -467,7 +467,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="455-te-0fz">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="KIX-EX-q79"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="KIX-EX-q79">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="aPK-Qa-srp" id="9JL-ML-QX2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

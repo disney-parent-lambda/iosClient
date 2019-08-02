@@ -11,10 +11,8 @@ import UIKit
 class LoginViewController: UIViewController {
     
 
-    @IBOutlet weak var usernameTextfield: UITextField!
-    @IBOutlet weak var passwordTextfield: UITextField!
-    
 
+    
 
     //Properties
     var loginController = LoginController()
@@ -31,21 +29,7 @@ class LoginViewController: UIViewController {
     }
     
 
-    @IBAction func loginTapped(_ sender: Any) {
-        
-    }
 
-    
-
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     @IBAction func loginButtonTapped(_ sender: Any) {
         
         
@@ -57,6 +41,8 @@ class LoginViewController: UIViewController {
             loginController.signIn(with: user) { (error) in
                 if let error = error {
                     NSLog("Error occurred during sign up: \(error)")
+                } else {
+                    performSegue(withIdentifier: "loginShowSegue", sender: self)
                 }
             }
         }
