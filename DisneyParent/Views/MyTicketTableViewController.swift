@@ -10,17 +10,16 @@ import UIKit
 
 class MyTicketTableViewController: UITableViewController {
     
+    
     //Properties
     let ticketController = TicketController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        ticketController.fetchMyTickets { (_) in
+            print(self.ticketController.myTickets)
+        }
     }
 
     // MARK: - Table view data source
@@ -29,6 +28,7 @@ class MyTicketTableViewController: UITableViewController {
 //        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTicketCell", for: indexPath)
@@ -53,11 +53,11 @@ class MyTicketTableViewController: UITableViewController {
             
             detailVC.fromMyTicket = true
             detailVC.fromAdd = false
-            print("myticket")
+            
             
             guard let indexPath = self.tableView.indexPathForSelectedRow else {return}
             
-            let ticket = ticketController.allTickets[indexPath.row]
+            let ticket = ticketController.myTickets[indexPath.row]
             detailVC.ticket = ticket
             
             detailVC.ticketController = ticketController
@@ -66,7 +66,7 @@ class MyTicketTableViewController: UITableViewController {
             
             detailVC.fromMyTicket = true
             detailVC.fromAdd = true
-            print("add ticket")
+            
             
             detailVC.ticketController = ticketController
         }

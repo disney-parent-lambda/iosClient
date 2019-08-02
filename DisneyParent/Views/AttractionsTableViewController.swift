@@ -10,16 +10,15 @@ import UIKit
 
 class AttractionsTableViewController: UITableViewController {
     
+    
     let attactionController = AttractionController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        attactionController.fetchAllAttractions { (_) in
+            print(self.attactionController.allAttactions)
+        }
     }
 
     // MARK: - Table view data source
@@ -30,7 +29,7 @@ class AttractionsTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return attactionController.allAttactions.count
     }
 
@@ -39,7 +38,7 @@ class AttractionsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AttractionCell", for: indexPath)
 
         let attraction = attactionController.allAttactions[indexPath.row]
-        cell.textLabel?.text = attraction.name
+        cell.textLabel?.text = attraction.restaurant
         
         return cell
 

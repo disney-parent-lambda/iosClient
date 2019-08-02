@@ -32,16 +32,16 @@ class TicketDetailsViewController: UIViewController {
         }
         if fromMyTicket && !fromAdd{
             saveButton.title = "Save"
-            title = "name of ticket"
-            nameTextfield.text = ticket?.username
+            title = "\(ticket?.username ?? "User")'s ticket"
+            nameTextfield.text = ticket?.title
             locationTextfield.text = ticket?.location
             timeTextfield.text = ticket?.time
             numberOfChildrenTextfield.text = ticket?.numberOfKids
         }
         if !fromMyTicket{
             saveButton.title = "Accept"
-            title = "name of ticket"
-            nameTextfield.text = ticket?.username
+            title = "\(ticket?.username ?? "User")'s ticket"
+            nameTextfield.text = ticket?.title
             locationTextfield.text = ticket?.location
             timeTextfield.text = ticket?.time
             numberOfChildrenTextfield.text = ticket?.numberOfKids
@@ -62,6 +62,7 @@ class TicketDetailsViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.navigationController?.popViewController(animated: true)
                 }
+
             
         }
         

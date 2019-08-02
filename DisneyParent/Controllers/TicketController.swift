@@ -16,7 +16,7 @@ class TicketController {
     
     var myTickets: [Ticket] = []
     
-    static let baseURL = URL(string: "https://disneyparent-7c296.firebaseio.com/")!
+    static let baseURL = URL(string: "https://disneyparents.herokuapp.com")!
 }
 
 
@@ -140,47 +140,123 @@ extension TicketController {
     
     func fetchAllTickets(completion: @escaping (Result<[Ticket], NetworkError>) -> Void) {
         
-        //guard let token = self.token else { completion(.failure(.noAuthorization)); return }
-        
         let allTicketsURL = TicketController.baseURL.appendingPathComponent("json")
         
         var request = URLRequest(url: allTicketsURL)
         request.httpMethod = HTTPMethod.get.rawValue
         //request.addValue("Bearer \(token.token)", forHTTPHeaderField: "Authorization")
         
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
-            if let response = response as? HTTPURLResponse,
-                response.statusCode == 401 {
-                
-                NSLog("Getting 401 error!")
-                completion(.failure(.badAuthorization))
-                return
-                
-            }
-            
-            if let _ = error {
-                completion(.failure(.otherError))
-                return
-            }
-            
-            guard let data = data else { completion(.failure(.badData)); return }
-            
-            let decoder = JSONDecoder()
-            
+        //Backup
+        if let path = Bundle.main.path(forResource: "tickets", ofType: "json") {
             do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                allTickets = try JSONDecoder().decode([Ticket].self, from: data)
                 
-                let networkTickets = try decoder.decode([Ticket].self, from: data)
-                self.allTickets = networkTickets
+                //                if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let _ = jsonResult["ticket"] as? [Any] {
+                //                    // do stuff
+                //                }
                 completion(.success(self.allTickets))
-                
             } catch {
-                
-                NSLog("Error decoding ticket: \(error)")
+                NSLog("Error decoding tickets: \(error)")
                 completion(.failure(.noDecode))
                 return
-                
             }
-            }.resume()
+        }
+            //MARK: Network call for getting all tickets
+            //        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            //
+            //            if let response = response as? HTTPURLResponse,
+            //                response.statusCode == 401 {
+            //
+            //                NSLog("Getting 401 error!")
+            //                completion(.failure(.badAuthorization))
+            //                return
+            //
+            //            }
+            //
+            //            if let _ = error {
+            //                completion(.failure(.otherError))
+            //                return
+            //            }
+            //
+            //            guard let data = data else { completion(.failure(.badData)); return }
+            //
+            //            let decoder = JSONDecoder()
+            //
+            //            do {
+            //
+            //                let networkTickets = try decoder.decode([Ticket].self, from: data)
+            //                self.allTickets = networkTickets
+            //                completion(.success(self.allTickets))
+            //
+            //            } catch {
+            //
+            //                NSLog("Error decoding ticket: \(error)")
+            //                completion(.failure(.noDecode))
+            //                return
+            //
+            //            }
+            //            }.resume()
+        
+        }
+    
+    func fetchMyTickets(completion: @escaping (Result<[Ticket], NetworkError>) -> Void) {
+        
+        let myTicketsURL = TicketController.baseURL.appendingPathComponent("json")
+        
+        var request = URLRequest(url: myTicketsURL)
+        request.httpMethod = HTTPMethod.get.rawValue
+        //request.addValue("Bearer \(token.token)", forHTTPHeaderField: "Authorization")
+        
+        //Backup
+        if let path = Bundle.main.path(forResource: "myTickets", ofType: "json") {
+            do {
+                
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                myTickets = try JSONDecoder().decode([Ticket].self, from: data)
+                
+                completion(.success(self.myTickets))
+            } catch {
+                NSLog("Error decoding tickets: \(error)")
+                completion(.failure(.noDecode))
+                return
+            }
+        }
+        //MARK: Network call for getting all tickets
+        //        URLSession.shared.dataTask(with: request) { (data, response, error) in
+        //
+        //            if let response = response as? HTTPURLResponse,
+        //                response.statusCode == 401 {
+        //
+        //                NSLog("Getting 401 error!")
+        //                completion(.failure(.badAuthorization))
+        //                return
+        //
+        //            }
+        //
+        //            if let _ = error {
+        //                completion(.failure(.otherError))
+        //                return
+        //            }
+        //
+        //            guard let data = data else { completion(.failure(.badData)); return }
+        //
+        //            let decoder = JSONDecoder()
+        //
+        //            do {
+        //
+        //                let networkTickets = try decoder.decode([Ticket].self, from: data)
+        //                self.myTickets = networkTickets
+        //                completion(.success(self.myTickets))
+        //
+        //            } catch {
+        //
+        //                NSLog("Error decoding ticket: \(error)")
+        //                completion(.failure(.noDecode))
+        //                return
+        //
+        //            }
+        //            }.resume()
+        
     }
 }

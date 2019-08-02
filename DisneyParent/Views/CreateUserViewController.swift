@@ -9,6 +9,9 @@
 import UIKit
 
 class CreateUserViewController: UIViewController {
+    
+    //Properties
+    let loginController = LoginController()
 
     override func viewDidLoad() {
         super.viewDidLoad()

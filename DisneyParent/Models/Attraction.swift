@@ -10,5 +10,5 @@ import Foundation
 
 struct Attraction: Codable {
     
-    var name: String
+    var restaurant: String
 }

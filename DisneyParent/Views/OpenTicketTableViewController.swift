@@ -13,29 +13,23 @@ class OpenTicketTableViewController: UITableViewController {
     //Properties
     let ticketController = TicketController()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        //prompt Login if there is no token
-        //        if self.ticketController.token == nil {
-        //            performSegue(withIdentifier: "LoginViewModalSegue", sender: self)
-        //        } else {
-        ticketController.fetchAllTickets(completion: { (_ ) in
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        })
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        ticketController.fetchAllTickets { (_) in
+            print(self.ticketController.allTickets)
+        }
     }
+    
     
     
     
     // MARK: - Table view data source
     
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//
-//        return 0
-//    }
+    //    override func numberOfSections(in tableView: UITableView) -> Int {
+    //
+    //        return 0
+    //    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -43,11 +37,9 @@ class OpenTicketTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath)
         
         let ticket = ticketController.allTickets[indexPath.row]
-        
         cell.textLabel?.text = ticket.title
         
         return cell
