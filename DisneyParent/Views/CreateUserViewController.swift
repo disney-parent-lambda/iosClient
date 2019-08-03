@@ -27,16 +27,20 @@ class CreateUserViewController: UIViewController {
 
     @IBAction func createTapped(_ sender: Any) {
         createNewUser()
+        
     }
     func createNewUser(){
         guard let username = usernameTextfield.text, !username.isEmpty, let password = passwordTextfield.text, !password.isEmpty else { return }
         let newUser = User(username: username, password: password)
         loginController.signUp(with: newUser) { (error) in
             if error != nil{
-                print("error signing up: \(error)")
-                return
+                print("error signing up: \(error.debugDescription)")
+                //return
             }
-            self.dismiss(animated: true, completion: nil)
+            if error.debugDescription == "Optional(Error Domain= Code=201 \"(null)\")"{
+                self.dismiss(animated: true, completion: nil)
+            }
+            
         }
         
         

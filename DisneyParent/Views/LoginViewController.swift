@@ -39,11 +39,13 @@ class LoginViewController: UIViewController {
             let user = User(username: username, password: password)
             
             
+            
             loginController.signIn(with: user) { (error) in
                 if let error = error {
                     NSLog("Error occurred during sign in: \(error)")
+                    
                 } else {
-                    self.performSegue(withIdentifier: "loginShowSegue", sender: self)
+                   self.performSegue(withIdentifier: "loginShowSegue", sender: self)
                 }
             }
         }
